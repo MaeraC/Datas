@@ -360,6 +360,53 @@ nav a {
 
 
 
+
+footer form {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #2c2c2c;
+    padding: 10px;
+    background: black;
+}
+footer form h1 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+    display: none;
+}
+footer form input {
+    height: 40px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: solid 1px #4e4e4e;
+    font-family: "Oxygen", sans-serif;
+    background: black;
+    color: white;
+}
+footer textarea {
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: solid 1px #4e4e4e;
+    font-family: "Oxygen", sans-serif;
+    background: black;
+    color: white;
+}
+footer .submit {
+    border: solid 1px #4e4e4e;
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+
+
+/*
+
 .form {
     background: black;
     color: white;
@@ -368,7 +415,7 @@ nav a {
     justify-content: space-between;
     align-items: center;
 }
-form {
+.form form {
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -376,12 +423,12 @@ form {
     padding: 40px;
     background: none;
 }
-form h1 {
+.form form h1 {
     margin-bottom: 50px;
     font-size: 35px;
     text-align: center;
 }
-form input {
+.form form input {
     height: 40px;
     padding-left: 10px;
     margin-bottom: 30px;
@@ -389,8 +436,9 @@ form input {
     border-bottom: solid 1px #4e4e4e;
     font-family: "Oxygen", sans-serif;
     background: black;
+    color: white;
 }
-textarea {
+.form textarea {
     height: 120px;
     padding: 10px;
     margin-bottom: 20px;
@@ -398,11 +446,12 @@ textarea {
     border-bottom: solid 1px #4e4e4e;
     font-family: "Oxygen", sans-serif;
     background: black;
+    color: white;
 }
-form button {
+.form form button {
     width: calc(100% + 4px);
 }
-form button::after {
+.form form button::after {
     width: calc(100% - 4px);
     background: black;
 }
@@ -418,7 +467,7 @@ form button::after {
     font-size: 15px;
 }
 
-
+*/
 
 
 
@@ -432,20 +481,23 @@ footer {
 footer .bg  {
     width: 100%;
     height: 100%;
-    background-color: #0f0f0fe1;
+   /* background-color: #0f0f0fe1;*/
+   background-color: #0e0e0e;
     color: white;
-    padding: 50px 0;
+    padding: 20px 0;
     padding-bottom: 10px;
     display: flex;
     flex-direction: column;
 }
 footer .bg div {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    
 }
 footer .bg div h2 {
     font-size: 16px;
     margin-bottom: 20px;
+    padding-top: 20px;
 }
 footer .bg div li {
     font-size: 14px;
@@ -453,8 +505,8 @@ footer .bg div li {
 }
 footer .bg span {
     text-align: center;
-    margin-top: 50px;
-    font-size: 14px;
+    margin-top: 0px;
+    font-size: 13px;
 }
 
 
