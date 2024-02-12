@@ -1,0 +1,461 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+li, ul {
+    list-style: none;
+}
+body {
+    font-family: "Oxygen", sans-serif;
+}
+button {
+    color: white;
+    font-family: "Oxygen", sans-serif;
+    letter-spacing: 1px;
+    width: calc(200px + 4px);
+    height: calc(45px + 4px);
+    background: linear-gradient(90deg, #7979f4 0%, #ff0000 49%, #FC4F4F 80%, #7979f4 100%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-transform:uppercase;
+    border: none;
+    animation:slidebg 2s linear infinite;
+}
+button::after {
+    content:attr(data);
+    width: 200px;
+    height: 45px;
+    background-color:#191919;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family: "Oxygen", sans-serif;
+}
+@keyframes slidebg {
+    to {
+      background-position: 200px;
+    }
+}
+.gradient {
+    display: inline-block;
+    background: linear-gradient(to left, #ff0000, #7979f4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.appear {
+    opacity: 0;
+    position: relative;
+    top: 50px;
+    transition: opacity 1s;
+}
+
+
+
+
+
+.titles-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    color: white;
+}
+.titles-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+.titles-container p {
+    text-align: center;
+    width: 70%;
+    line-height: 28px;
+}
+
+
+
+
+.header-home {
+    background: url(assets/header.jpg) no-repeat fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    color: white;
+}
+.header-home .titles {
+    width: 100%;
+    height: 100%;
+    background-color: #000000be;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-home .titles div {
+    width: 50%;
+}
+.header-home h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    position: relative;
+    animation: appear-title 1.5s ease-in-out;
+}
+@keyframes appear-title {
+    0% {left: -700px;}
+    70% { left: 20px; }
+    100% { left: 0; }
+}
+@keyframes appear-title2 {
+    0% {left: -900px;}
+    70% { left: 30px; }
+    100% { left: 0; }
+}
+.header-home .span {
+    font-size: 25px;
+    font-weight: 300;
+    color: #ff0000;
+}
+.header-home h2 {
+    font-weight: 400;
+    line-height: 35px;
+    font-size: 20px;
+    width: 70%;
+    position: relative;
+    animation: appear-title2 1.6s ease-in-out;
+}
+.header-home .titles img {
+    width: 38%;
+    margin-top: 50px;
+}
+
+nav {
+    position: absolute;
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+nav a {
+    margin: 0 20px;
+}
+
+
+
+
+
+.test {
+    background: black;
+    color: white;
+    padding: 100px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.test h1 {
+    font-size: 45px;
+    text-align: center;
+    width: 60%;
+    margin-bottom: 50px;
+    line-height: 65px;
+}
+.test p {
+    font-weight: 300;
+    width: 80%;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+.test .button {
+    position: relative;
+}
+.test .button img {
+    position: absolute;
+    left: 50%;
+    top: 70px;
+    transform: translateX(-50%);
+    width: 35px;
+    height: 35px;
+}
+.test .icones {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 20px 0;
+    position: relative;
+}
+.test .icones div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+}
+.up {
+    position: relative;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1.5s ease-in-out;
+}
+.up-animate {
+    opacity: 1;
+    visibility: visible;
+    animation: up 1.5s ease-in-out;
+}
+@keyframes up {
+    0% {
+        bottom: -320px;
+        opacity: 0;
+    }
+    70% {
+        bottom: 30px;
+        opacity: 1;
+    }
+    100% {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+.test .icones img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+.test .icones p {
+    line-height: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+
+
+
+.bande {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    background: rgb(0, 0, 0);
+    overflow: hidden;
+}
+.bande img {
+    width: 150px;
+    height: 100px;
+    margin: 30px;
+}
+.bande div {
+    transform: translatex(0px);
+    animation: 20s infinite slide;
+    display: flex;
+    flex-wrap: nowrap;
+}
+@keyframes slide {
+    from {
+        transform: translatex(0px);
+    } 
+    to {
+        transform: translatex(-1200px);
+    }
+}
+
+
+
+
+
+.services1 .card {
+    display: flex;
+}
+.services1 .card .img {
+    width: 50%;
+}
+.services1 .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.services1 .card .txt {
+    padding: 40px;
+    width: 50%;
+    color: white;
+    background: #0e0e0e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.services1 .card div h1 {
+    font-size: 35px;
+}
+.services1 .card div p {
+    line-height: 30px;
+    margin: 40px 30px;
+}
+
+
+
+
+.testimonials {
+    background: url(assets/testimonials.jpg);
+    background-size: cover;
+    color: white;
+}
+.testimonials .bg {
+    width: 100%;
+    height: 100%;
+    background: #00000070;
+    padding: 70px 50px;
+}
+.testimonials h1 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 150px;
+}
+.testimonials img {
+    border-radius: 50%;
+    background: white;
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    position: absolute;
+    top: -50px;
+}
+.testimonials p {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+.testimonials span {
+    font-size: 14px;
+    font-style: italic;
+}
+.testimonials .cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.testimonials .card {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: #424242 solid 1px;
+    padding: 20px;
+    padding-top: 40px;
+    position: relative;
+    background: #0000007c;
+}
+
+
+
+
+.form {
+    background: black;
+    color: white;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #2c2c2c;
+    padding: 40px;
+    background: none;
+}
+form h1 {
+    margin-bottom: 50px;
+    font-size: 35px;
+    text-align: center;
+}
+form input {
+    height: 40px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: solid 1px #4e4e4e;
+    font-family: "Oxygen", sans-serif;
+    background: black;
+}
+textarea {
+    height: 120px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: solid 1px #4e4e4e;
+    font-family: "Oxygen", sans-serif;
+    background: black;
+}
+form button {
+    width: calc(100% + 4px);
+}
+form button::after {
+    width: calc(100% - 4px);
+    background: black;
+}
+.faq {
+    width: 50%;
+}
+.faq h1 {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+.faq p {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+
+
+
+
+
+footer {
+    background: url(assets/header.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+footer .bg  {
+    width: 100%;
+    height: 100%;
+    background-color: #0f0f0fe1;
+    color: white;
+    padding: 50px 0;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+footer .bg div {
+    display: flex;
+    justify-content: space-evenly;
+}
+footer .bg div h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+footer .bg div li {
+    font-size: 14px;
+    line-height: 25px;
+}
+footer .bg span {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+
+
