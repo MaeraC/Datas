@@ -37,6 +37,7 @@ button::after {
     justify-content:center;
     font-family: "Oxygen", sans-serif;
 }
+
 @keyframes slidebg {
     to {
       background-position: 200px;
@@ -282,7 +283,7 @@ nav a {
 
 
 
-
+/*
 .services1 .card {
     display: flex;
 }
@@ -304,6 +305,7 @@ nav a {
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
+    position: relative;
 }
 .services1 .card div h1 {
     font-size: 35px;
@@ -312,6 +314,169 @@ nav a {
     line-height: 30px;
     margin: 40px 30px;
 }
+.services1 .txt div {
+    position: absolute;
+    background: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.services1 .number {
+
+}
+.services1 .info {
+}
+*/
+
+
+.services1 .card {
+    display: flex;
+    justify-content: center;
+    background: #0e0e0e;
+    padding: 80px 0;
+    padding-bottom: 150px;
+    overflow: hidden;
+}
+.services1 .card2 {
+    background: black;
+}
+.services1 .card .img {
+    width: 35%;
+    height: 90vh;
+    box-shadow: #272727 10px 10px 1px;
+}
+.anim-img {
+    position: relative;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1.5s ease-in-out;
+}
+.anim-img2 {
+    position: relative;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1.5s ease-in-out;
+}
+.img-animate {
+    opacity: 1;
+    visibility: visible;
+    animation: img-slide 1.5s ease-in-out;
+}
+@keyframes img-slide {
+    0% {right: -1000px; opacity: 0;}
+    70% { right: 40px; opacity: 1; }
+    100% { right: 0; opacity: 1;}
+}
+.img-animate2 {
+    opacity: 1;
+    visibility: visible;
+    animation: img-slide2 1.5s ease-in-out;
+}
+@keyframes img-slide2 {
+    0% {left: -1000px; opacity: 0;}
+    70% { left: 40px; opacity: 1; }
+    100% { left: 0; opacity: 1;}
+}
+.services1 .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: rgb(78, 78, 78) 1px solid;
+}
+.services1 .card .txt {
+    margin-right: 40px;
+    width: 40%;
+    height: 90%;
+    color: white;
+    background: #0e0e0e;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+.txt2 {
+    margin-right: 0;
+    margin-left: 50px;
+}
+.services1 .card .txt h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.services1 .card .text {
+    line-height: 28px;
+    font-size: 15px;
+}
+.services1 .card button {
+    margin-top: 30px;
+    width: calc(150px + 4px);
+    height: calc(40px + 4px);
+    
+}
+.services1 .card button::after {
+    width: 150px;
+    height: 40px;
+    
+}
+.services1 .counter {
+    position: absolute;
+    bottom: -180px;
+    z-index: 5;
+    left: 0;
+    display: flex;
+    background: black;
+}
+.slide-animate {
+    animation: appear-counter 1.7s ease-in-out;   
+}
+@keyframes appear-counter {
+    0% {left: -1000px; }
+    70% { left: 40px;}
+    100% { left: 0;}
+}
+.services1 .counter2 {
+    position: absolute;
+    bottom: -180px;
+    z-index: 5;
+    display: flex;
+    right: 0;
+    background: #0e0e0e;
+}
+.slide-animate2 {
+    animation: appear-counter2 1.7s ease-in-out;   
+}
+@keyframes appear-counter2 {
+    0% {right: -1000px; }
+    70% { right: 40px;}
+    100% { right: 0;}
+}
+.services1 .counter span,
+.services1 .counter2 span {
+    display: inline-block;
+    text-align: center;
+    margin: 30px;
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.number {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.info {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+
+
 
 
 
