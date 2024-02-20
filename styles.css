@@ -363,7 +363,7 @@ nav a {
 .img-animate {
     opacity: 1;
     visibility: visible;
-    animation: img-slide 1.5s ease-in-out;
+    animation: img-slide 1.9s ease-in-out;
 }
 @keyframes img-slide {
     0% {right: -1000px; opacity: 0;}
@@ -373,11 +373,11 @@ nav a {
 .img-animate2 {
     opacity: 1;
     visibility: visible;
-    animation: img-slide2 1.5s ease-in-out;
+    animation: img-slide2 1.9s ease-in-out;
 }
 @keyframes img-slide2 {
     0% {left: -1000px; opacity: 0;}
-    70% { left: 40px; opacity: 1; }
+    70% { left: 20px; opacity: 1; }
     100% { left: 0; opacity: 1;}
 }
 .services1 .card img {
@@ -430,7 +430,7 @@ nav a {
     background: black;
 }
 .slide-animate {
-    animation: appear-counter 1.7s ease-in-out;   
+    animation: appear-counter 1.9s ease-in-out;   
 }
 @keyframes appear-counter {
     0% {left: -1000px; }
@@ -446,7 +446,7 @@ nav a {
     background: #0e0e0e;
 }
 .slide-animate2 {
-    animation: appear-counter2 1.7s ease-in-out;   
+    animation: appear-counter2 1.9s ease-in-out;   
 }
 @keyframes appear-counter2 {
     0% {right: -1000px; }
