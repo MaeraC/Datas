@@ -365,26 +365,15 @@ nav a {
     visibility: visible;
     animation: img-slide 1.9s ease-in-out;
 }
-@keyframes img-slide {
-    0% {right: -1000px; opacity: 0;}
-    70% { right: 40px; opacity: 1; }
-    100% { right: 0; opacity: 1;}
-}
 .img-animate2 {
     opacity: 1;
     visibility: visible;
     animation: img-slide2 1.9s ease-in-out;
 }
-@keyframes img-slide2 {
-    0% {left: -1000px; opacity: 0;}
-    70% { left: 20px; opacity: 1; }
-    100% { left: 0; opacity: 1;}
-}
 .services1 .card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border: rgb(78, 78, 78) 1px solid;
 }
 .services1 .card .txt {
     margin-right: 40px;
